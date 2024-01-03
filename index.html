@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My to do application</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <h1>Instructions for the to do app exercise</h1>
+    <section id="featureApp">
+        <h1>My To Do App!</h1>
+        <button type="submit" id="save-tasks-btn">Save Tasks</button>
+        <div id="taskListContainer">
+            <ul class="taskList">
+                <h2>My tasks:</h2>
+                <li class="todo">
+                    <h3>Task Name</h3>
+                    <p>Task Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat iusto dolores
+                        neque? Nobis magnam neque nisi voluptate temporibus deleniti, exercitationem sed delectus,
+                        corporis ipsam eos, totam provident eius iste vero!</p>
+                    <button class="complete-task-btn">Complete</button>
+                    <button class="delete-task-btn">Remove</button>
+                </li>
+            </ul>
+        </div>
+        <div id="taskFormContainer">
+            <fieldset>
+                <legend>Add a task!</legend>
+                <form id="taskForm">
+                    <label for="taskName">Enter a task name:</label>
+                    <input name="taskName" type="text" size="50" placeholder="feed the dog!" />
+                    <label for="taskDescription">Enter a description</label>
+                    <textarea name="taskDescription" type="text" rows="4" cols="50"
+                        placeholder="open the can"></textarea>
+                    <button type="submit" id="add-task-btn">Add Task</button>
+            </fieldset>
+            </form>
+        </div>
+    </section>
+    <section id="appRequirements">
+        <h2>Part I - Requirements:</h2>
+        <ul>
+            <li>
+                <p>Add a new "to do" item by submitting a HTML form.</p>
+            </li>
+            <li>
+                <p>Mark a "to do" item as completed by crossing out the text of the "to do" item from the list.</p>
+            </li>
+            <li>
+                <p>Remove a "to do" item from the list.</p>
+            </li>
+        </ul>
+        <h2>Part II - Additional Requirements</h2>
+        <ul>
+            <li>
+                <p>Now that the part I requirements are met and the app is functioning per Part I requirements add a
+                    localstorage feature where the user can save their "to do" items in localStorage.</p>
+            </li>
+            <li>
+                <p>Make sure that when the page refreshes, the todos on the page remain there.</p>
+            </li>
+        </ul>
+    </section>
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
